@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a master's student from Beijing Technology and Business University.
+I am a Master's degree candidate student from Beijing Technology and Business University.
 My research interests are mainly in causal discovery.
 
 # Publications
