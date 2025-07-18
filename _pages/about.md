@@ -9,7 +9,7 @@ redirect_from:
 
 I am Zheng Li.
 My research interests are mainly in causal discovery in the presence of latent variables.
-
+I obtained my Master's degree at Beijing Technology and Business University under the supervision of Professor [Feng Xie](https://fengxie.site/).
 # Publications
 
 * [Local Identifying Causal Relations in the Presence of Latent Variables.](https://openreview.net/pdf?id=O6q2BHK1BL) *ICML*, Vancouver, Canada, 2025. [[Code](https://github.com/zhengli0060/LocICR)]
