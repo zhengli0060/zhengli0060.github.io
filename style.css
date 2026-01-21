@@ -1,0 +1,259 @@
+/* style.css - 完整版：A4纸张桌面风格 */
+
+/* --- 🔧 全局变量配置 --- */
+:root {
+    /* 1. 配色方案 (学术清新风) */
+    --primary-color: #2c3e50;       /* 主标题颜色 (深蓝灰) */
+    --accent-color: #3498db;        /* 链接颜色 (清新蓝) */
+    --text-color: #444444;          /* 正文颜色 (加深一点以提升对比度) */
+    --meta-color: #888888;          /* 辅助信息颜色 */
+    
+    /* 背景色配置 */
+    --desk-bg-color: #f0f2f5;       /* "桌面"背景色 (浅灰) */
+    --paper-bg-color: #ffffff;      /* "纸张"背景色 (纯白) */
+
+    /* 2. 尺寸设置 */
+    --paper-width: 1000px;           /* 宽度 */
+    --paper-padding: 3rem;          /* 模拟打印页边距 (约1英寸) */
+    
+    /* 3. 字体 */
+    --font-main: Georgia, serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --- 🌍 基础样式 --- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--desk-bg-color); /* 👈 这里让背景变成桌面色 */
+    text-align:left;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased; /* 让字体更清晰 */
+}
+
+/* --- 📄 核心容器：A4纸张效果 --- */
+.container {
+
+    width: 95%; /* 在手机或平板上，占据屏幕宽度的 95%，留一点边 */
+    max-width: var(--paper-width); /* 在大屏幕上，限制最大宽度为 960px，防止无限拉伸 */
+    
+    min-height: 80vh; /* 设为视口高度的80%，不再强制A4高度，更像网页 */
+    background-color: var(--paper-bg-color);
+    
+    margin: 20px auto; 
+    padding: var(--paper-padding); 
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08); 
+    border-radius: 4px; /* 既然不再是纯粹模拟打印纸，可以加一点点圆角，更柔和 */
+}
+
+/* --- 👤 头部区域 (Bio) --- */
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.5rem;
+    /* margin-bottom: 1rem;
+    border-bottom: 3px solid #f0f0f0; 加粗一点线条 */
+    padding-bottom: 1.5rem;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header-content h1 {
+    font-size: 2.2rem;
+    color: #527bbd;
+    margin: 0;
+    letter-spacing: -0.5px;
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.chinese-name {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin: 0 0 1.5rem 0;
+    font-family: "STKaiti", "华文楷体", "楷体", KaiTi, serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+
+.bio-text p {
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    text-align: left; /* 让段落对齐 */
+}
+
+/* 头像 */
+.profile-photo {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    /* border-radius: 50%; /* 圆形 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #fff; /* 增加白色边框，增加层次感 */
+    flex-shrink: 0;
+}
+
+/* --- 📌 标题与排版 --- */
+h2 {
+    font-size: 1.5rem;
+    color: #527bbd;
+    margin-top: 0;
+   /* border-left: 5px solid #527bbd; /* 左侧加一个蓝色色块装饰 */
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #aaaaaa; /* 加粗一点线条 */
+    padding-bottom: 0.5rem;
+}
+
+/* 移除之前的横线样式，改用左侧色块风格，更符合文档感 */
+h2::after {
+    content: none; 
+}
+
+h3 {
+    font-size: 1.15rem;
+    color: #333;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-weight: 600;
+    background: #f9f9f9; /* 给子标题加个淡灰背景条 */
+    padding: 5px 0px;
+    border-radius: 4px;
+}
+
+/* --- 🔗 链接 --- */
+a {
+    color: #3461a9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #2980b9;
+    background-color: rgba(52, 152, 219, 0.1); /* 悬停时加个淡淡的底色 */
+    border-radius: 2px;
+}
+
+/* --- 📝 列表与论文 --- */
+ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.pub-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pub-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px dashed #eee; /* 每篇论文下面加个虚线分隔 */
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.pub-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 0.8;
+}
+
+.pub-item:last-child {
+    border-bottom: none; /* 最后一篇论文不需要分隔线 */
+}
+
+.pub-title {
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #000; /* 标题用纯黑 */
+
+}
+
+.pub-authors {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+}
+
+.me {
+    font-weight: bold;
+    color: var(--primary-color);
+    /* text-decoration: underline; 给自己的名字加下划线 */
+}
+
+.pub-venue {
+    font-style: italic;
+    color: var(--meta-color);
+    font-size: 0.9rem;
+}
+
+/* --- 📱 移动端适配 (重点) --- */
+/* 当屏幕宽度小于 A4纸宽度(约800px)时，切换为普通网页模式 */
+@media screen and (max-width: 820px) {
+    body {
+        background-color: #fff; /* 去掉桌面灰背景 */
+    }
+    
+    .container {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 1.5rem; /* 减小内边距 */
+        box-shadow: none; /* 去掉阴影 */
+    }
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .bio-text p {
+        text-align: left; /* 手机上改回左对齐 */
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* --- 🖨️ 打印专用样式 --- */
+@media print {
+    body {
+        background: none;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+        border: none;
+    }
+    /* 打印时隐藏某些不需要的元素，比如导航栏(如果有的话) */
+}
