@@ -84,7 +84,7 @@ header {
     margin: 0 0 1.5rem 0;
     font-family: "STKaiti", "华文楷体", "楷体", KaiTi, serif;
     font-weight: normal;
-    letter-spacing: 0.1em;
+    letter-spacing: 1.5px;
     display: inline-block;
 }
 
@@ -187,7 +187,6 @@ li {
 
 .pub-title {
     font-size: 1.05rem;
-    display: block;
     margin-bottom: 0.3rem;
     color: #000; /* 标题用纯黑 */
 
