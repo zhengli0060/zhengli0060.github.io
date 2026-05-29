@@ -96,11 +96,11 @@ header {
 
 /* 头像 */
 .profile-photo {
-    width: 230px;
+    width: 330px;
     height: 230px;
     object-fit: cover;
     /* border-radius: 50%; /* 圆形 */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
     border: 1px solid #fff; /* 增加白色边框，增加层次感 */
     flex-shrink: 0;
 }
