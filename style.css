@@ -189,7 +189,7 @@ strong {
 
 .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(190px, 350px);
+    grid-template-columns: minmax(0, 3.5fr) minmax(190px, 2fr);
     gap: clamp(1.1rem, 2.6vw, 2.4rem);
     align-items: start;
     padding-bottom: clamp(1rem, 2.6vw, 1.8rem);
@@ -282,6 +282,8 @@ strong {
 
 .profile-figure {
     margin: 0;
+    width: min(100%, 360px);
+    justify-self: end;
 }
 
 .profile-photo {
@@ -560,7 +562,9 @@ h3 {
     }
 
     .profile-figure {
+        width: min(100%, 330px);
         max-width: 330px;
+        justify-self: start;
         order: -1;
     }
 
