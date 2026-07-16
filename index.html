@@ -3,160 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Zheng Li's Homepage</title>
+    <meta name="description" content="Zheng Li's academic homepage. Research in causal discovery, latent variables, adjustment sets, and instrumental variables.">
+    <title>Zheng Li</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>😄</text></svg>">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231f4f6f'/%3E%3Ctext x='32' y='40' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' text-anchor='middle' fill='white'%3EZL%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="container">
-        
-        <header>
-            <div class="header-content">
-                <h1>Zheng Li</h1>
-                <h1 class="chinese-name">李政</h1>
-                <div class="bio-text">
-                    <p>
-                        Shenzhen Institute of Advanced Technology 
-                        <br>
-                        Chinese Academy of Sciences
-                        <br>
-                        Shenzhen, China. 518055.
-                    </p>
-                    <p>
-                        
-                    </p>
-                    <p>
-                        Email: zheng.li2@siat.ac.cn
-                        <br>
-                        <a href="https://github.com/zhengli0060">GitHub</a>
-                        <br>
-                        <a href="https://scholar.google.com.hk/citations?user=pZr3u8AAAAAJ&hl">Google Scholar</a>
-                    </p>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-inner">
+            <a class="nav-name" href="#top" aria-label="Zheng Li homepage">Zheng Li</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <div class="nav-links" id="primary-menu">
+                <a href="#biography">Biography</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
+                <a href="#service">Service</a>
+                <a href="#awards">Awards</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-shell" id="top">
+        <header class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Research Assistant · Causal Discovery and Inference</p>
+                <h1>
+                    <img src="images/zheng_li.svg" alt="Zheng Li" class="name-signature name-signature-en">
+                    <img src="images/name.svg" alt="李政" class="name-signature name-signature-zh">
+                </h1>
+                <p class="affiliation">
+                    Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences<br>
+                    Shenzhen, China 518055
+                </p>
+                <div class="contact-links" aria-label="Contact and academic profiles">
+                    <a href="mailto:zheng.li2@siat.ac.cn">zheng.li2@siat.ac.cn</a>
+                    <a href="https://github.com/zhengli0060" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://scholar.google.com.hk/citations?user=pZr3u8AAAAAJ&amp;hl" target="_blank" rel="noopener noreferrer">Google Scholar</a>
                 </div>
             </div>
-            <!-- <img src="images/me.png" alt="Zheng Li" class="profile-photo"> -->
-             <img src="images/shunde.jpg" alt="Zheng Li" class="profile-photo">
+            <figure class="profile-figure">
+                <img src="images/shunde.jpg" alt="Zheng Li" class="profile-photo">
+            </figure>
         </header>
 
-        <section>
-            <h2>Biography</h2>
-            <p>
-                I am currently a Research Assistant at the Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, supervised by Prof. <a href="https://people.ucas.edu.cn/~hzhang10">Hao Zhang</a> and Prof. <a href="https://people.ucas.ac.cn/~rxwang">Ruxin Wang</a>. 
+        <main id="main">
+            <section id="biography" class="content-section" aria-labelledby="biography-title">
+                <div class="section-heading">
+                    <p class="section-kicker">About</p>
+                    <h2 id="biography-title">Biography</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        I am currently a Research Assistant at the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, supervised by Prof.
+                        <a href="https://people.ucas.edu.cn/~hzhang10" target="_blank" rel="noopener noreferrer">Hao Zhang</a>
+                        and Prof.
+                        <a href="https://people.ucas.ac.cn/~rxwang" target="_blank" rel="noopener noreferrer">Ruxin Wang</a>.
+                    </p>
+                    <p>
+                        I received my M.S. degree from Beijing Technology and Business University from September 2023 to July 2025, advised by Prof.
+                        <a href="https://fengxie.site/" target="_blank" rel="noopener noreferrer">Feng Xie</a>.
+                        I was also a student member of the
+                        <a href="https://btbu-causality.group/" target="_blank" rel="noopener noreferrer">Causal Inference Group</a>
+                        led by Prof.
+                        <a href="https://www.math.pku.edu.cn/jsdw/ltx/141130.htm" target="_blank" rel="noopener noreferrer">Zhi Geng</a>.
+                    </p>
+                </div>
+            </section>
 
-                I received my M.S. degree from Beijing Technology and Business University (September 2023 - July 2025), advised by Prof. <a href="https://fengxie.site/">Feng Xie</a>, and was a student member of the <a href="https://btbu-causality.group/">Causal Inference Group</a> led by Prof. <a href="https://www.math.pku.edu.cn/jsdw/ltx/141130.htm">Zhi Geng</a>.
-            </p>
-            
-        </section>
+            <section id="research" class="content-section" aria-labelledby="research-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Focus</p>
+                    <h2 id="research-title">Research Interests</h2>
+                </div>
+                <div class="section-body">
+                    <ul class="compact-list">
+                        <li>Causal discovery in the presence of latent variables and selection bias</li>
+                        <li>Selecting valid adjustment sets for causal effect estimation</li>
+                        <li>Testability of instrumental variables</li>
+                    </ul>
+                    <p>I welcome academic discussions and collaborations. Please feel free to contact me.</p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Causal discovery in the presence of latent variables</li>
-                <li>Selecting valid adjustment sets for causal effect estimation</li>
-                <li>Testability of instrumental variables</li>
-            </ul>
-            <p> I am happy to have academic discussions and collaborations. Please feel free to contact me!</p>
-        </section>
+            <section id="publications" class="content-section" aria-labelledby="publications-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Selected Work</p>
+                    <h2 id="publications-title">Publications</h2>
+                </div>
+                <div class="section-body">
+                    <p class="note">* Equal contribution.</p>
 
+                    <h3>Preprints</h3>
+                    <ol class="publication-list">
+                        <li class="publication-item">
+                            <article>
+                                <p class="pub-title">Testability of Instrumental Variables in Additive Nonlinear, Non-Constant Effects Models</p>
+                                <p class="pub-authors">Xichen Guo*, <strong>Zheng Li*</strong>, Biwei Huang, Yan Zeng, Zhi Geng, Feng Xie.</p>
+                                <p class="pub-meta">arXiv:2411.12184
+                                    <a class="pub-link" href="https://arxiv.org/pdf/2411.12184" target="_blank" rel="noopener noreferrer">PDF</a>
+                                    <a class="pub-link" href="https://github.com/zhengli0060/AIT_Condition" target="_blank" rel="noopener noreferrer">Code</a>
+                                </p>
+                            </article>
+                        </li>
+                    </ol>
 
-        <section>
-            <h2>Publications</h2>
-            <p style="font-size: 0.9rem; color: #888; margin-bottom: 0.5rem;">(* Equal Contribution)</p>
+                    <h3>Conference Papers</h3>
+                    <ol class="publication-list">
+                        <li class="publication-item">
+                            <article>
+                                <p class="pub-title">A Recursive Decomposition Framework for Causal Structure Learning in the Presence of Latent Variables</p>
+                                <p class="pub-authors"><strong>Zheng Li</strong>, Feng Xie, Shenglan Nie, Xichen Guo, Ruxin Wang, Hao Zhang.</p>
+                                <p class="pub-meta">ICML, Seoul, South Korea, 2026. <span class="pub-honor pub-honor-oral">Oral</span> <span class="pub-rank-note">Top 0.71% of 23,918</span>
+                                    <a class="pub-link" href="http://arxiv.org/pdf/2605.10651" target="_blank" rel="noopener noreferrer">PDF</a>
+                                    <a class="pub-link" href="https://github.com/zhengli0060/DiCoLa-ICML2026" target="_blank" rel="noopener noreferrer">Code</a>
+                                </p>
+                            </article>
+                        </li>
+                        <li class="publication-item">
+                            <article>
+                                <p class="pub-title">Local Learning for Covariate Selection in Nonparametric Causal Effect Estimation with Latent Variables</p>
+                                <p class="pub-authors"><strong>Zheng Li</strong>, Xichen Guo, Feng Xie, Yan Zeng, Hao Zhang, Zhi Geng.</p>
+                                <p class="pub-meta">NeurIPS, San Diego, USA, 2025.
+                                    <a class="pub-link" href="https://arxiv.org/pdf/2411.16315" target="_blank" rel="noopener noreferrer">PDF</a>
+                                    <a class="pub-link" href="https://github.com/zhengli0060/LSAS_NeurIPS_2025" target="_blank" rel="noopener noreferrer">Code</a>
+                                </p>
+                            </article>
+                        </li>
+                        <li class="publication-item">
+                            <article>
+                                <p class="pub-title">Local Identifying Causal Relations in the Presence of Latent Variables</p>
+                                <p class="pub-authors"><strong>Zheng Li</strong>, Zeyu Liu, Feng Xie, Hao Zhang, Chunchen Liu, Zhi Geng.</p>
+                                <p class="pub-meta">ICML, Vancouver, Canada, 2025. 🛠️ <span class="pub-honor pub-honor-spotlight">Spotlight</span> <span class="pub-rank-note">Top 2.6% of 12,107</span> </p>
+                            </article>
+                        </li>
+                        <li class="publication-item">
+                            <article>
+                                <p class="pub-title">Local Causal Structure Learning in the Presence of Latent Variables</p>
+                                <p class="pub-authors">Feng Xie, <strong>Zheng Li</strong>, Peng Wu, Yan Zeng, Chunchen Liu, Zhi Geng.</p>
+                                <p class="pub-meta">ICML, Vienna, Austria, 2024.
+                                    <a class="pub-link" href="https://openreview.net/pdf?id=3KMMPxrAk5" target="_blank" rel="noopener noreferrer">PDF</a>
+                                    <a class="pub-link" href="https://github.com/zhengli0060/MMB-by-MMB-V2" target="_blank" rel="noopener noreferrer">Code</a>
+                                </p>
+                            </article>
+                        </li>
+                    </ol>
+                </div>
+            </section>
 
-            <h3>🔥 Preprints</h3>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <span class="pub-authors">Xichen Guo*, <span class="me">Zheng Li*</span>, Biwei Huang, Yan Zeng, Zhi Geng, Feng Xie.</span>
-                    <a href="https://arxiv.org/pdf/2411.12184" class="pub-title"> Testability of Instrumental Variables in Additive Nonlinear, Non-Constant Effects Models.</a>
-                    <span class="pub-venue"> arXiv:2411.12184
-                    <a href="https://github.com/zhengli0060/AIT_Condition" class="code-badge">Code</a>
-                    </span>
-                </li>
-                </ul>
+            <section id="projects" class="content-section" aria-labelledby="projects-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Software</p>
+                    <h2 id="projects-title">Open Source Projects</h2>
+                </div>
+                <div class="section-body">
+                    <article class="project-entry">
+                        <h3>
+                            <a href="https://github.com/zhengli0060/FastDAG2PAG-python" target="_blank" rel="noopener noreferrer">FastDAG2PAG: DAG to PAG/MAG Converter</a>
+                        </h3>
+                        <p>
+                            A Python implementation for transforming directed acyclic graphs (DAGs) into maximal ancestral graphs (MAGs) and partial ancestral graphs (PAGs), given specified latent variables and selection bias. The tool implements Theorem 4.2 from Richardson and Spirtes,
+                            <a href="https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-4/Ancestral-graph-Markov-models/10.1214/aos/1031689015.pdf" target="_blank" rel="noopener noreferrer">"Ancestral Graph Markov Models"</a>
+                            (The Annals of Statistics, 2002).
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-            <h3>😋 Published Papers</h3>
-            <ul class="pub-list">
+            <section id="service" class="content-section" aria-labelledby="service-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Community</p>
+                    <h2 id="service-title">Academic Service</h2>
+                </div>
+                <div class="section-body">
+                    <ul class="compact-list">
+                        <li>Conference Program Committee or Reviewer: ICML 2026; NeurIPS 2026.</li>
+                        <li>Journal Reviewer: Transactions on Machine Learning Research (TMLR).</li>
+                    </ul>
+                </div>
+            </section>
 
-                <li class="pub-item">
-                    <span class="pub-authors"><span class="me">Zheng Li</span>, Feng Xie, Shenglan Nie, Xichen Guo, Ruxin Wang, Hao Zhang.</span>
-                    <a href="http://arxiv.org/pdf/2605.10651" class="pub-title"> A Recursive Decomposition Framework for Causal Structure Learning in the Presence of Latent Variables.</a>
-                    <span class="pub-venue">
-                        ICML, Seoul, South Korea, 2026.
-                        <span class="highlight-badge">Oral Presentation</span>
-                        <span class="rank-badge"> TOP 0.71%, out of 23,918</span>
-                        <a href="https://github.com/zhengli0060/DiCoLa-ICML2026" class="code-badge">Code</a>
-                        <!-- <span class="pub-note"></span> -->
-                    </span>
-                </li>
-
-                <li class="pub-item">
-                    <span class="pub-authors"><span class="me">Zheng Li</span>, Xichen Guo, Feng Xie, Yan Zeng, Hao Zhang, and Zhi Geng.</span>
-                    <a href="https://arxiv.org/pdf/2411.16315" class="pub-title"> Local Learning for Covariate Selection in Nonparametric Causal Effect Estimation with Latent Variables.</a>
-                    <span class="pub-venue"> 
-                        NeurIPS, San Diego, USA, 2025.
-                        <a href="https://github.com/zhengli0060/LSAS_NeurIPS_2025" class="code-badge">Code</a>
-                        <!-- <span class="rank-badge">5290/21,575</span> -->
-                    </span>
-                </li>
-
-                <li class="pub-item">
-                    <span class="pub-authors"><span class="me">Zheng Li*</span>, Zeyu Liu*, Feng Xie, Hao Zhang, Chunchen Liu, and Zhi Geng.</span>
-                    <span class="pub-title"> Local Identifying Causal Relations in the Presence of Latent Variables.</span>
-                    <span class="pub-venue"> 
-                        ICML, Vancouver, Canada, 2025. (🛠️)
-                        <span class="highlight-badge">Spotlight Poster</span>
-                        <span class="rank-badge">TOP 2.6%, out of 12,107</span>
-                    </span>
-                </li>
-
-
-                <li class="pub-item">
-                    <span class="pub-authors">Feng Xie, <span class="me">Zheng Li</span>, Peng Wu, Yan Zeng, Chunchen Liu, and Zhi Geng.</span>
-                    <a href="https://openreview.net/pdf?id=3KMMPxrAk5" class="pub-title"> Local Causal Structure Learning in the Presence of Latent Variables.</a>
-                    <span class="pub-venue"> 
-                        ICML, Vienna, Austria, 2024.
-                        <a href="https://github.com/zhengli0060/MMB-by-MMB-V2" class="code-badge">Code</a>
-                        <!-- <span class="rank-badge">2609/9,473</span> -->
-                    </span>
-                </li>
-
-            </ul>
-        </section>
-
-        <section>
-            <h2>Open Source Projects</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/zhengli0060/FastDAG2PAG-python">FastDAG2PAG: DAG to PAG/MAG Converter</a>
-                    <br>
-                    A Python implementation for transforming Directed Acyclic Graphs (DAGs) into Maximal Ancestral Graphs (MAGs) and Partial Ancestral Graphs (PAGs) given specified latent variables and selection bias. This tool implements Theorem 4.2 proposed by Richardson and Spirtes in <a href="https://projecteuclid.org/journals/annals-of-statistics/volume-30/issue-4/Ancestral-graph-Markov-models/10.1214/aos/1031689015.pdf">'' Ancestral Graph Markov Models''</a> (The Annals of Statistics, 2002), which achieves efficient conversion.
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Academic Service</h2>
-            <ul>
-                <li>
-                    Conference Program Committee or Reviewer: ICML 2026; NeurIPS 2026.
-                </li>
-                <li>
-                    Journal Reviewer: Transactions on MLR (TMLR).
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Awards & Honors</h2>
-            <ul>
-                <li>
-                    <a href="pdfs/Gmail - [ICML 2026] Thank you - Silver Reviewer Award.pdf">Silver Reviewer for ICML 2026.</a>
-                </li>
-            </ul>
-        </section>
-
+            <section id="awards" class="content-section" aria-labelledby="awards-title">
+                <div class="section-heading">
+                    <p class="section-kicker">Recognition</p>
+                    <h2 id="awards-title">Awards &amp; Honors</h2>
+                </div>
+                <div class="section-body">
+                    <ul class="compact-list">
+                        <li>
+                            <a href="pdfs/Gmail%20-%20%5BICML%202026%5D%20Thank%20you%20-%20Silver%20Reviewer%20Award.pdf" target="_blank" rel="noopener noreferrer">Silver Reviewer, ICML 2026</a>.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        const sectionLinks = document.querySelectorAll(".nav-links a");
+
+        navToggle.addEventListener("click", () => {
+            const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+            navToggle.setAttribute("aria-expanded", String(!isOpen));
+            navLinks.classList.toggle("is-open", !isOpen);
+        });
+
+        sectionLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                navToggle.setAttribute("aria-expanded", "false");
+                navLinks.classList.remove("is-open");
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+                if (entry.isIntersecting && activeLink) {
+                    sectionLinks.forEach((link) => link.removeAttribute("aria-current"));
+                    activeLink.setAttribute("aria-current", "true");
+                }
+            });
+        }, { rootMargin: "-35% 0px -55% 0px", threshold: 0 });
+
+        document.querySelectorAll("main section[id]").forEach((section) => observer.observe(section));
+    </script>
 </body>
 </html>
